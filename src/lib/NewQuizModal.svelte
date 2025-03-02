@@ -1,7 +1,7 @@
 <script lang="ts">
     import CheckCircleFill from "svelte-bootstrap-icons/lib/CheckCircleFill.svelte";
     import { goto } from "$app/navigation";
-
+    import { base } from '$app/paths';
     interface Props {
         show: boolean;
         onCreateNew: () => void;
@@ -30,19 +30,19 @@
                 </button>
                 <button
                     class="btn btn-outline"
-                    onclick={() => navigateTo("/")}
+                    onclick={() => navigateTo(`${base}/`)}
                 >
                     Ir al inicio
                 </button>
                 <button
                     class="btn btn-outline"
-                    onclick={() => navigateTo("/quiz_list")}
+                    onclick={() => navigateTo(`${base}/quiz_list`)}
                 >
                     Ver lista de quizzes
                 </button>
                 <button
                     class="btn btn-outline"
-                    onclick={() => navigateTo("/quiz_time")}
+                    onclick={() => navigateTo(`${base}/quiz_time`)}
                 >
                     Jugar quizzes
                 </button>

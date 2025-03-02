@@ -1,5 +1,6 @@
 <script lang="ts">
     import { fade } from "svelte/transition";
+    import { base } from '$app/paths';
     import { localStore, type LocalStore } from "$lib/localStore.svelte";
     import type { QuestionData } from "$lib/interfaces";
     import PencilFill from "svelte-bootstrap-icons/lib/PencilFill.svelte";
@@ -186,7 +187,7 @@
 <div class="container mx-auto px-4 py-8 max-w-4xl rounded-lg shadow-xl">
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold">Listado de Preguntas</h1>
-        <a href="/new_quiz" class="btn btn-outline btn-primary btn-sm gap-2">
+        <a href="{base}/new_quiz" class="btn btn-outline btn-primary btn-sm gap-2">
             <PlusLg />
             Nueva pregunta
         </a>
@@ -260,7 +261,7 @@
         </div>
     {/if}
     <div class="mt-6 flex gap-2">
-        <a href="/" class="btn btn-outline btn-sm"> Volver al inicio </a>
+        <a href="{base}/" class="btn btn-outline btn-sm"> Volver al inicio </a>
 
         {#if questions.value.length > 0}
             <button

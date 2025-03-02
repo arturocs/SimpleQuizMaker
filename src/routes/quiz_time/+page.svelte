@@ -5,7 +5,7 @@
     import Quiz from "$lib/Quiz.svelte";
     import CheckSquareFill from "svelte-bootstrap-icons/lib/CheckSquareFill.svelte";
     import XSquareFill from "svelte-bootstrap-icons/lib/XSquareFill.svelte";
-
+    import { base } from '$app/paths';
     // Estado para almacenar las preguntas
     let questions: LocalStore<QuestionData[]> = $state(
         localStore("questions", []),
@@ -93,7 +93,7 @@
 <div class="container mx-auto px-4 py-8 max-w-3xl">
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold text-center">Test Aleatorio</h1>
-        <a href="/" class="btn btn-outline btn-sm">
+        <a href="{base}/" class="btn btn-outline btn-sm">
             Volver al inicio
         </a>
     </div>
@@ -147,7 +147,7 @@
                 >
             </div>
             <div class="flex-none">
-                <a href="/" class="btn btn-sm">Volver al inicio</a>
+                <a href="{base}/" class="btn btn-sm">Volver al inicio</a>
             </div>
         </div>
     {:else if quizCompleted}
@@ -197,7 +197,7 @@
                     <button class="btn btn-primary" onclick={restartQuiz}>
                         Volver a jugar
                     </button>
-                    <a href="/" class="btn btn-outline"> Volver al inicio </a>
+                    <a href="{base}/" class="btn btn-outline"> Volver al inicio </a>
                 </div>
             </div>
         </div>
