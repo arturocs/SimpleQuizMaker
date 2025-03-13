@@ -57,9 +57,9 @@
                 class="checkbox checkbox-primary shrink-0"
             />
 
-            <span class={`input bg-inherit w-full ${getOptionStyle2()}`}>
-                {option.text}</span
-            >
+            <span class={`py-2 px-3 block border rounded-md bg-inherit w-full break-words whitespace-normal ${getOptionStyle2()}`}>
+                {option.text}
+            </span>
             {#if isSubmitted && option.isCorrect}
                 <span class="text-success ml-2">
                     <CheckLg />
