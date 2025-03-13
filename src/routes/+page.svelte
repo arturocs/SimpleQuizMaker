@@ -13,8 +13,8 @@
 <div class="hero min-h-[30vh] bg-base-200">
     <div class="hero-content text-center">
         <div class="max-w-md">
-            <h1 class="text-5xl font-bold">SimpleQuizMaker</h1>
-            <p class="py-6">
+            <h1 class="text-3xl md:text-5xl font-bold">SimpleQuizMaker</h1>
+            <p class="py-6 break-words whitespace-normal">
                 Crea y practica con preguntas tipo test para preparar exámenes.
             </p>
             {#if questionCount > 0}
