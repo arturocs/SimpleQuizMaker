@@ -134,7 +134,7 @@
                 </span>
             </div>
             <div class="flex-none">
-                <a href="{base}/" class="btn btn-sm">Volver al inicio</a>
+                <a href="{base}/" class="btn btn-sm whitespace-nowrap">Volver al inicio</a>
             </div>
         </div>
     {:else if quizCompleted}
