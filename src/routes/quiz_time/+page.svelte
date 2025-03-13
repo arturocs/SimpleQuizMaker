@@ -126,8 +126,10 @@
 
     {#if questions.value.length === 0}
         <div class="alert alert-warning">
-            <div>
-                <ExclamationTriangle />
+            <div class="flex items-center gap-2">
+                <div class="flex-none">
+                    <ExclamationTriangle />
+                </div>
                 <span>
                     No hay preguntas disponibles. Por favor, crea algunas
                     preguntas primero.
