@@ -94,11 +94,8 @@
 <div class="container mx-auto px-4 py-8 max-w-3xl">
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold text-center">Test Aleatorio</h1>
-        <a href="{base}/" class="btn btn-outline btn-sm">
-            Volver al inicio
-        </a>
+        <a href="{base}/" class="btn btn-outline btn-sm"> Volver al inicio </a>
     </div>
-
 
     <!-- Contador de progreso -->
     <div class="stats shadow w-full mb-6">
@@ -187,11 +184,13 @@
                     <button class="btn btn-primary" onclick={restartQuiz}>
                         Volver a jugar
                     </button>
-                    <a href="{base}/" class="btn btn-outline"> Volver al inicio </a>
+                    <a href="{base}/" class="btn btn-outline">
+                        Volver al inicio
+                    </a>
                 </div>
             </div>
         </div>
-        {:else if currentQuestion}
+    {:else if currentQuestion}
         <!-- Quiz actual -->
         <div class="card bg-base-100 shadow-xl">
             <div class="card-body">
@@ -203,11 +202,16 @@
                         on:answered={(e) => handleQuizAnswered(e.detail)}
                     />
                 {/key}
-                
+
                 {#if isAnswered}
                     <div class="card-actions justify-center mt-4">
-                        <button class="btn btn-lg btn-primary" onclick={selectNextQuestion}>
-                            {availableQuestions.length > 0 ? 'Siguiente pregunta' : 'Ver resultados'}
+                        <button
+                            class="btn btn-lg btn-primary"
+                            onclick={selectNextQuestion}
+                        >
+                            {availableQuestions.length > 0
+                                ? "Siguiente pregunta"
+                                : "Ver resultados"}
                         </button>
                     </div>
                 {/if}

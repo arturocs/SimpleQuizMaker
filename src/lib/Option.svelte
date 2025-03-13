@@ -38,15 +38,16 @@
 
         if (!isSelected && !option.isCorrect) {
             return "";
-        } 
+        }
 
         return "border-none";
     }
 </script>
 
-
 <div class="flex items-center gap-2">
-    <div class={`form-control flex-1 w-full rounded-lg transition-colors px-5 ${getOptionStyle()}`} >
+    <div
+        class={`form-control flex-1 w-full rounded-lg transition-colors px-5 ${getOptionStyle()}`}
+    >
         <div class="flex items-center gap-2 w-full">
             <input
                 type="checkbox"
@@ -56,7 +57,9 @@
                 class="checkbox checkbox-primary shrink-0"
             />
 
-            <span class={`input bg-inherit w-full ${getOptionStyle2()}`}> {option.text}</span>
+            <span class={`input bg-inherit w-full ${getOptionStyle2()}`}>
+                {option.text}</span
+            >
             {#if isSubmitted && option.isCorrect}
                 <span class="text-success ml-2">
                     <CheckLg />

@@ -1,7 +1,7 @@
 <script lang="ts">
     import NewQuiz from "$lib/NewQuiz.svelte";
     import "../../app.css";
-    import { base } from '$app/paths';
+    import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -16,7 +16,9 @@
 
     <footer class="mt-8">
         <div class="mt-6">
-            <a href="{base}/" class="btn btn-outline btn-sm"> Volver al inicio </a>
+            <a href="{base}/" class="btn btn-outline btn-sm">
+                Volver al inicio
+            </a>
         </div>
     </footer>
 </div>

@@ -1,7 +1,7 @@
 <script lang="ts">
     import CheckCircleFill from "svelte-bootstrap-icons/lib/CheckCircleFill.svelte";
     import { goto } from "$app/navigation";
-    import { base } from '$app/paths';
+    import { base } from "$app/paths";
     interface Props {
         show: boolean;
         onCreateNew: () => void;

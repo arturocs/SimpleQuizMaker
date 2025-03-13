@@ -4,7 +4,7 @@
     import ListCheck from "svelte-bootstrap-icons/lib/ListCheck.svelte";
     import PlayCircleFill from "svelte-bootstrap-icons/lib/PlayCircleFill.svelte";
     import { localStore } from "$lib/localStore.svelte";
-    import { base } from '$app/paths';
+    import { base } from "$app/paths";
     // Obtenemos la cantidad de preguntas para mostrar en las estadísticas
     const questions = localStore("questions", []);
     const questionCount = $derived(questions.value.length);
@@ -64,7 +64,8 @@
                     Prueba cada pregunta individualmente.
                 </p>
                 <div class="card-actions justify-end">
-                    <a href="{base}/quiz_list" class="btn btn-info">Ver Lista</a>
+                    <a href="{base}/quiz_list" class="btn btn-info">Ver Lista</a
+                    >
                 </div>
             </div>
         </div>
@@ -83,11 +84,11 @@
                     estadísticas de rendimiento.
                 </p>
                 <div class="card-actions justify-end">
-                    <a href="{base}/quiz_time" class="btn btn-success">Practicar</a>
+                    <a href="{base}/quiz_time" class="btn btn-success"
+                        >Practicar</a
+                    >
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>

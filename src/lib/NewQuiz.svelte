@@ -98,7 +98,7 @@
     }
 </script>
 
-<div class="card w-full max-w-3xl bg-base-100  mx-auto">
+<div class="card w-full max-w-3xl bg-base-100 mx-auto">
     <div class="card-body">
         <h2 class="card-title text-2xl font-bold">Crear nueva pregunta</h2>
 
