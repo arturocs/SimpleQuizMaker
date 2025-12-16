@@ -63,8 +63,6 @@
 
             // Emitir evento para el componente padre
             dispatch("update", updatedQuestion);
-
-
         }
     }
 
@@ -88,9 +86,10 @@
                 id="question-text"
                 bind:value={question}
                 placeholder="Escribe aquí el enunciado de la pregunta"
-                rows="3"
+                rows="6"
                 class="textarea textarea-bordered w-full"
-            ></textarea>
+            >
+            </textarea>
         </div>
 
         <div class="mt-6">
