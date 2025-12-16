@@ -7,8 +7,8 @@
     import NewQuizModal from "./NewQuizModal.svelte";
 
     interface Props {
-        initialQuestion: string;
-        initialOptions: OptionData[];
+        initialQuestion?: string;
+        initialOptions?: OptionData[];
     }
 
     // Propiedades opcionales para el componente

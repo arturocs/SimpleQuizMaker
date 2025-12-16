@@ -8,7 +8,7 @@
 
     interface Props {
         question: QuestionData;
-        isCorrect: boolean;
+        isCorrect?: boolean;
     }
 
     let { question, isCorrect = $bindable(false) }: Props = $props();
